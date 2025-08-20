@@ -25,6 +25,7 @@ btn.addEventListener('click', function(){
         })
 
         li.appendChild(removebtn);//o botão de remover (removebtn) será colocado dentro do <li>
+        list.appendChild(li);
         
         input.value = "";// limpa o campo do input
         input.focus(); // coloca o cursor de volta no input
