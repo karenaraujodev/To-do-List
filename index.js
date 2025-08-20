@@ -20,14 +20,13 @@ btn.addEventListener('click', function(){
         removebtn.textContent = 'X' ; //colocando o texto "X" dentro do elemento que está armazenado na variável removebtn.
         removebtn.classList.add("remove");//.classLister representa classes. .add adiciona uma ou mais classes CSS ao elemento 
         removebtn.addEventListener("click", function (e){
-           e.stopPropagation();
-           li.remove();
+           e.stopPropagation();//Interrompe a propagação do evento para elementos "pais" no DOM. o button é filho de li, se nn tiver isso aqui, o evento deli tbm seria acionado ao clicar no botão
+           li.remove();//.remove() é um método do DOM que remove o elemento da árvore do documento.
         })
 
-        li.appendChild(removebtn);
-        list.appendChild(li);
+        li.appendChild(removebtn);//o botão de remover (removebtn) será colocado dentro do <li>
         
-        input.value = "";
-        input.focus();
+        input.value = "";// limpa o campo do input
+        input.focus(); // coloca o cursor de volta no input
     }
 })
