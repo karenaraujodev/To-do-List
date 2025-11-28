@@ -120,6 +120,12 @@ li.completed{
     opacity: 0.8;
 }
 
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--brand-color);
+    font-weight:bolder;
+}
 /* RESPONSIVIDADE */
 @media (max-width: 500px) {
     input {
